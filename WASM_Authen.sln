@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WASM_Authen.API", "WASM_Authen.API\WASM_Authen.API.csproj", "{49405BC9-708A-41D5-B25F-BE9CF1C01D95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WASM_Authen.API", "WASM_Authen.API\WASM_Authen.API.csproj", "{49405BC9-708A-41D5-B25F-BE9CF1C01D95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WASM_Authen.Shared", "WASM_Authen.Shared\WASM_Authen.Shared.csproj", "{FB207865-A8C9-45BC-8AE2-FB3C3A813046}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WASM_Authen.Shared", "WASM_Authen.Shared\WASM_Authen.Shared.csproj", "{FB207865-A8C9-45BC-8AE2-FB3C3A813046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WASM_Authen.Client", "WASM_Authen.Client\WASM_Authen.Client.csproj", "{57A52BA2-79A4-4E4E-B894-2BC2767F6663}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FB207865-A8C9-45BC-8AE2-FB3C3A813046}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB207865-A8C9-45BC-8AE2-FB3C3A813046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB207865-A8C9-45BC-8AE2-FB3C3A813046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A52BA2-79A4-4E4E-B894-2BC2767F6663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A52BA2-79A4-4E4E-B894-2BC2767F6663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A52BA2-79A4-4E4E-B894-2BC2767F6663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A52BA2-79A4-4E4E-B894-2BC2767F6663}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

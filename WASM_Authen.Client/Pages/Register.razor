@@ -1,0 +1,24 @@
+﻿@page "/register"
+@inherits RegisterBase
+
+<h3>Register</h3>
+
+<EditForm Model="RegisterViewModel" OnValidSubmit="HandleSubmitForm">
+    <div class="form-group row">
+        <label class="form-label">FirstName</label>
+        <InputText class="form-control" @bind-Value="RegisterViewModel.FirstName" />
+
+        <label class="form-label">LastName</label>
+        <InputText class="form-control" @bind-Value="RegisterViewModel.LastName" />
+
+        <label class="form-label">Username</label>
+        <InputText class="form-control" @bind-Value="RegisterViewModel.UserName" />
+
+        <label class="form-label">Email</label>
+        <InputText class="form-control" @bind-Value="RegisterViewModel.Email" />
+
+        <label class="form-label">Password</label>
+        <InputText class="form-control" @bind-Value="RegisterViewModel.Password" />
+    </div>
+    <button class="btn btn-primary">Register</button>
+</EditForm>

@@ -9,9 +9,9 @@ namespace WASM_Authen.Shared.ViewModels
 {
     public class LoginViewModel
     {
-        [Required(ErrorMessage = "First name is required.")]
+        [Required(ErrorMessage = "Username is required.")]
         public string UserName { get; set; }
-        [Required(ErrorMessage = "Email is required.")]
+        [Required(ErrorMessage = "Password is required.")]
         [DataType(DataType.Password)]
         [MinLength(6, ErrorMessage = "Password toi thieu 6 ky tu.")]
         public string Password { get; set; }

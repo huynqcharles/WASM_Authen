@@ -1,0 +1,20 @@
+﻿@page "/login"
+@inherits LoginBase
+
+<h3>Login</h3>
+
+<EditForm Model="LoginViewModel" OnValidSubmit="HandleSubmitForm">
+    <DataAnnotationsValidator />
+    <div class="form-group row">
+        <label class="form-label">Username</label>
+        <InputText class="form-control" @bind-Value="LoginViewModel.UserName" />
+        <ValidationMessage For="() => LoginViewModel.UserName"></ValidationMessage>
+
+        <label class="form-label">Password</label>
+        <InputText class="form-control" @bind-Value="LoginViewModel.Password" />
+        <ValidationMessage For="() => LoginViewModel.Password"></ValidationMessage>
+    </div>
+    <button class="btn btn-primary">Login</button>
+</EditForm>
+
+<h5 style="color:red">@ErrorMessage</h5>

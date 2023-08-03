@@ -23,10 +23,12 @@ namespace WASM_Authen.API.Controllers
 
             if (result.IsSuccess)
             {
-                return Ok(result.Token);
+                return Ok(result);
             }
-
-            return StatusCode(result.StatusCode, result.Message);
+            else
+            {
+                return BadRequest(result);
+            }
         }
     }
 }

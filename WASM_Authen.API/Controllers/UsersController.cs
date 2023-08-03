@@ -16,7 +16,7 @@ namespace WASM_Authen.API.Controllers
             this.usersService = usersService;
         }
 
-        [Authorize(Roles = "Admin, User")]
+        //[Authorize(Roles = "Admin, User")]
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {

@@ -21,7 +21,15 @@ namespace WASM_Authen.API.Controllers
         public async Task<IActionResult> Register(RegisterViewModel registerUser, string role)
         {
             var result = await this.registerService.Register(registerUser, role);
-            return StatusCode(result.StatusCode, result.Message);
+
+            if (result.IsSuccess)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result);
+            }
         }
     }
 }
